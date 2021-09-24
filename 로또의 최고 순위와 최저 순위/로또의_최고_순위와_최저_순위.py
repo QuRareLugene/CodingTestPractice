@@ -1,4 +1,3 @@
-
 def solution(lottos, win_nums):
     HitCount = 0
     ZeroCount = 0
