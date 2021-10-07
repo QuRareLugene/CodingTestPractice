@@ -1,0 +1,33 @@
+# Chapter 3. 그리디 > 3. 숫자 카드 게임
+# 이것이 취업을 위한 코딩 테스트다 with 파이썬 (나동빈, 한빛미디어)
+
+def solution(BaYeol, YSize, XSize):
+	# Mins = 각 줄의 최소값
+	Mins = 0
+	# CurrentMin = 최소값중 최대값
+	CurrentMin = 0
+	# 
+	for i in range(int(YSize)):
+		Matrix = BaYeol[i].split(' ')
+		for j in range(int(XSize)):
+			Value = Matrix[j]
+			if j == 0:
+				Mins = Value
+			elif Value < Mins:
+				Mins = Value
+		if i == 0:
+			CurrentMin = Mins
+		elif Mins > CurrentMin:
+			CurrentMin = Mins
+
+	return CurrentMin
+
+
+# 확인용 main
+#SizeOfMatrix = input().split(' ')
+
+#QuestionMatrix = []
+#for i in range(int(SizeOfMatrix[0])):
+#	QuestionMatrix.append(input())
+
+#print(solution(QuestionMatrix, SizeOfMatrix[0], SizeOfMatrix[1]))

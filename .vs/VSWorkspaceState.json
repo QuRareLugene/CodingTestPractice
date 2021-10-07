@@ -8,8 +8,9 @@
     "\\실패율",
     "\\없는 숫자 더하기",
     "\\완주하지 못한 선수",
-    "\\음양더하기"
+    "\\음양더하기",
+    "\\크레인 인형뽑기 게임"
   ],
-  "SelectedNode": "\\음양더하기\\음양더하기.py",
+  "SelectedNode": "\\실패율\\실패율.py",
   "PreviewInSolutionExplorer": false
 }
