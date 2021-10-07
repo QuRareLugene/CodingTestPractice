@@ -24,6 +24,18 @@ def solution(BaYeol, YSize, XSize):
 
 	return CurrentMin
 
+# 교재 모범답안
+def solutionAlter():
+	n, m = map(int, input().split())
+
+	result = 0
+
+	for i in range(n):
+		data = list(map(int, input().split()))
+		min_value = 10001
+		for a in data:
+			min_value = min(min_value, a)
+	result = max(result, min_value)
 
 # 확인용 main
 #SizeOfMatrix = input().split(' ')
