@@ -6,15 +6,17 @@ def solution(BaYeol, YSize, XSize):
 	Mins = 0
 	# CurrentMin = 최소값중 최대값
 	CurrentMin = 0
-	# 
+	# 한 줄씩 탐색한다.
 	for i in range(int(YSize)):
 		Matrix = BaYeol[i].split(' ')
+		# 각 줄마다 최소값을 찾는다.
 		for j in range(int(XSize)):
 			Value = Matrix[j]
 			if j == 0:
 				Mins = Value
 			elif Value < Mins:
 				Mins = Value
+		# 줄마다 최소값의 최대값을 찾는다.
 		if i == 0:
 			CurrentMin = Mins
 		elif Mins > CurrentMin:
